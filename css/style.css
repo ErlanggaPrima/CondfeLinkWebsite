@@ -1,0 +1,245 @@
+html{
+    height: 100%;
+}
+body{
+font-family: "Plus Jakarta Sans", sans-serif;
+background: #eeee;
+overflow-x: hidden;
+}
+.body-login{
+    background: white;
+}
+.posts-list{
+    padding-bottom: 0px;
+}
+.apiauth{
+    font-weight: lighter;
+}
+
+.card{
+    border-radius: 15px;
+    border-color: white;
+    margin-bottom: 25px;
+}
+
+input{
+    border-color: white;
+}
+.logo, .cbn-logo{
+    border-radius: 250px;
+}
+
+#header1{
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    font-weight: lighter;
+}
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+strong{
+    color: #0d6efd;
+}
+.login{
+    padding: 1em;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    background: #3e4684;
+    font-weight: 600;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #text-welcome{
+        font-size: 25px;
+        text-align: center;
+}
+
+.card-login{
+    transform: translateY(10%);
+}
+}
+p{
+    margin: 0;
+}
+#loader{
+    background: rgba(0, 0, 0, 0.397);
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    display: none;
+}
+.logout{
+    padding-left: 6px;
+    padding-bottom: 10px;
+    transform: translateY(-35%);
+}
+
+.card-login{
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card-login .card-body{
+    padding: 20px;
+}
+
+.btn-condfe, #btn-add{
+    background: #bc9fcb;
+    color: white;
+    border: none;
+}
+
+.btn-condfe:hover,  #btn-add:hover{
+    color: white;
+    background: #d7a3f1;
+    border: none;
+}
+
+
+/* Set a style for all buttons */
+button {
+    background-color: #bc9fcb;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+  }
+
+  /* Float cancel and delete buttons and add an equal width */
+  .cancelbtn, .deletebtn {
+    float: left;
+    width: 100%;
+  }
+  
+  /* Add a color to the cancel button */
+  .cancelbtn {
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    padding-bottom: 10px;
+    border: black;
+  }
+  
+  /* Add a color to the delete button */
+  .deletebtn {
+    border-radius: 10px;
+  }
+  
+  /* Add padding and center-align text to the container */
+  .container-modal {
+    padding: 16px;
+    text-align: center;
+  }
+  
+  /* The Modal (background) */
+  .modal-logout {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: #474e5d8f;
+    padding-top: 50px;
+  
+  }
+
+
+  /* Modal Content/Box */
+  .modal-content-logout{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid rgba(136, 136, 136, 0.473);
+    border-radius: 20px;
+    padding-bottom: 20px;
+    width: 25%; /* Could be more or less, depending on screen size */
+  }
+.modal-content{
+  border-radius: 20px;
+
+}
+
+  /* Style the horizontal ruler */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+   
+  /* The Modal Close Button (x) */
+  .close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #f44336;
+    cursor: pointer;
+  }
+  
+  /* Clear floats */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Change styles for cancel button and delete button on extra small screens */
+  @media screen and (max-width: 300px) {
+    .cancelbtn, .deletebtn {
+       width: 100%;
+       
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .modal-content-logout {
+      width: 75%; /* Could be more or less, depending on screen size */
+    }
+}
+
+@media only screen and (min-width: 600px) {
+  .modal-content-logout {
+    width: 50%; /* Could be more or less, depending on screen size */
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-content-logout {
+    width: 35%; /* Could be more or less, depending on screen size */
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .modal-content-logout {
+    width: 35%; /* Could be more or less, depending on screen size */
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+    .card-login .card-body{
+        padding: 70px;
+    }
+    .modal-content-logout {
+      width: 25%; /* Could be more or less, depending on screen size */
+    }
+    .body-login{
+      overflow: hidden;
+  }
+}
+

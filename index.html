@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="icon" type="image/x-icon" href="/assets/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet'
+    href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap'>
+  <link rel="stylesheet" href="./style.css">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&family=Poppins:wght@100;300;400;700&display=swap"
+    rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <title>Condfe Link - Dashboard</title>
+</head>
+
+<body>
+  <div class="container text-left">
+    <div class="row p-3 mt-2">
+      <h3 id="text-welcome" class="welcome text-left mb-3">Welcome To Link Website Condfe </h3>
+      <div class="col-md-12" id="header1">
+        <div class="row p-3 mt-2">
+          <div class="col-md-12 text-center">
+            <img class="logo " src="/assets/condfe.jpg" width="150px" height="150px" alt="">
+            <h4 class="mt-3 "> <b>Link Website Condfe </b> </h4>
+            <p class="mt-2 mb-2">Version 1.0</p>
+            <!-- <div class="col-md-6"> -->
+            <form class="add-post-form">
+              <button type="button" class="btn btn-light btn-block mt-2" id="btn-add" data-toggle="modal"
+                data-target="#exampleModal1" data-whatever="@mdo">Add Post</button>
+          
+                <!-- modals add post -->
+              <div class="modal fade text-left" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content p-3">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel1">Link Condfe</h5>
+                      <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="alert alert-primary alert-dismissible fade show d-none my-alert mb-0" role="alert">
+                          <strong>Your link has been successfully entered Condfie !</strong>
+                          <!-- <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> -->
+                        </div>
+                        <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">Title Link:</label>
+                          <input type="text" class="form-control card-text" id="title-value"
+                            placeholder="Enter title link">
+                        </div>
+                        <div class="form-group">
+                          <label for="message-text" class="col-form-label">Username Link:</label>
+                          <input class="form-control" id="body-value" placeholder="Enter your link"></input>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                      <button type="submit" class="btn btn-primary btn-send">Submit</button>
+                      <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                        Loading...
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- modals edit-->
+              <div class="modal fade text-left" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content p-3">
+
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Edit Your Link Condfie ❤️ </h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="form-group">
+                          <div class="alert alert-primary alert-dismissible fade show d-none my-alert2 mb-0"
+                            role="alert">
+                            <strong>Your link has been Updated Condfie !</strong>
+                          </div>
+                          <label for="recipient-name" class="col-form-label">Title Link:</label>
+                          <input type="text" class="form-control card-text" id="title-value2"
+                            placeholder="Enter title link">
+                        </div>
+                        <div class="form-group">
+                          <label for="message-text" class="col-form-label">Username Link:</label>
+                          <input class="form-control" id="body-value2" placeholder="Enter your link"></input>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="submit" class="btn2 btn btn-primary">Submit</button>
+                      <button class="btn btn-primary btn-loading2 d-none" type="button" disabled>
+                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                        Loading...
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <button type="button" class="btn btn-light btn-block mt-2" id="btn-add" data-toggle="modal"
+              data-target="#exampleModal2" data-whatever="@mdo">Add Post</button> -->
+        
+            <!-- modals Delete -->
+            <div class="modal fade text-left" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content p-3">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">Delete Link</h5>
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                     <!-- <div class="form-group">
+                      <p> Are you sure you want to delete this link ?</p>
+                      </div> -->
+                      <p> <b>Are you sure you want to delete this link ?</b> </p>
+
+                      <!-- <div class="form-group">
+                        <label for="message-text" class="col-form-label">Username Link:</label>
+                        <input class="form-control" id="body-value" placeholder="Enter your link"></input>
+                      </div>  -->
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                    <button type="submit" class="btn3 btn btn-danger btn-send">Delete</button>
+                    <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                      <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                      Loading...
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </form>
+          </div>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="container">
+    <div class="posts-list row p-3">
+      <!-- Item -->
+    </div>
+    <div class="logout">
+<!-- <a href="" class="btn btn-danger" onclick="logout()">Logout</a> -->
+<!-- button logout  -->
+<button onclick="document.getElementById('id01').style.display='block'" class="btn-logout btn btn-danger">Logout</button>
+
+    </div>
+    <div id="id01" class="modal modal-logout ">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+      <form class="modal-content-logout" action="/action_page.php">
+        <div class="container container-modal">
+          <h1>Logout</h1>
+          <p>Are you sure you want to Logout ? </p>
+        
+          <div class="clearfix">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn btn btn-primary mb-3 mt-3">Cancel</button>
+        </div>
+        <div class="clearfix">
+            <button type="button" onclick="logout()" class="deletebtn btn btn-danger">Logout</button>
+        </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="/js/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
